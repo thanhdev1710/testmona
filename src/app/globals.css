@@ -26,14 +26,13 @@ body {
 }
 
 .text-effect {
-  font-size: clamp(40px, 18vw, 300px);
   font-weight: 700;
   text-transform: uppercase;
   text-align: center;
   position: relative;
   color: #b7e135;
   line-height: 1;
-  -webkit-text-stroke: 4px #b7e135;
+  -webkit-text-stroke: 2px #b7e135;
   background: linear-gradient(to bottom, #b7e135 65%, transparent 35%);
   background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -47,6 +46,6 @@ body {
   width: 100%;
   height: 100%;
   color: transparent;
-  -webkit-text-stroke: 4px white;
+  -webkit-text-stroke: 2px white;
   clip-path: polygon(0 65%, 100% 65%, 100% 100%, 0 100%);
 }

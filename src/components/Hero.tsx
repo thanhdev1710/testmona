@@ -22,7 +22,7 @@ export default function Hero() {
             className="lg:scale-110"
           />
 
-          <h2 className="font-bold text-[48px] text-white mt-4 uppercase">
+          <h2 className="font-bold xl:text-[48px] text-[36px] text-white mt-4 uppercase">
             Mở ra giới hạn diễn hoạ kiến trúc
           </h2>
         </div>

@@ -6,9 +6,7 @@ export default function Footer() {
   return (
     <footer className="bg-[#333] text-white relative overflow-hidden">
       <Section className="pt-16 pb-12">
-        {/* Layout chính */}
         <div className="flex flex-col lg:flex-row lg:items-start justify-between gap-12 lg:gap-20">
-          {/* Logo */}
           <div className="flex justify-center lg:justify-start shrink-0">
             <Image
               alt="Logo"
@@ -19,14 +17,11 @@ export default function Footer() {
             />
           </div>
 
-          {/* Nội dung chính */}
           <div className="flex flex-col flex-1 lg:pl-16">
-            {/* Tiêu đề */}
             <h2 className="text-2xl lg:text-3xl font-bold mb-6 lg:mb-8 text-center lg:text-left">
               THÔNG TIN
             </h2>
 
-            {/* Thanh link */}
             <div className="text-sm text-gray-300 text-center lg:text-left mb-10 lg:mb-12 flex flex-wrap justify-center lg:justify-start gap-x-2 gap-y-1">
               <span>Chương trình học</span> /<span> Đặc quyền</span> /
               <span className="text-[#a3cd3b] font-semibold">
@@ -35,7 +30,6 @@ export default function Footer() {
               /<span> Cộng đồng học viên</span>
             </div>
 
-            {/* Thông tin liên hệ */}
             <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 text-sm text-center sm:text-left">
               <div>
                 <h3 className="font-bold mb-1">Email</h3>
@@ -54,7 +48,6 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Icon mạng xã hội (ẩn trên mobile) */}
           <div className="hidden lg:flex flex-col items-center space-y-4">
             <a
               href="#"
@@ -88,7 +81,6 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Icon bar di động */}
         <div className="flex justify-center mt-10 gap-6 lg:hidden">
           <a
             href="#"

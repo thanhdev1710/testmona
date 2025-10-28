@@ -4,11 +4,11 @@ import Image from "next/image";
 export default function SectionGrid({ title }: { title: string }) {
   return (
     <Section>
-      <h2 className="font-bold xl:text-[48px] text-[36px] text-center mb-12 text-[#151515]">
+      <h2 className="font-bold xl:text-[48px] md:text-[36px] text-[24px] text-center mb-12 text-[#151515]">
         {title}
       </h2>
-      <div className="grid grid-cols-4 grid-rows-3 gap-6">
-        <div className="col-span-3 row-span-2 h-[600px] relative rounded-lg overflow-hidden">
+      <div className="grid grid-cols-1 grid-rows-5 md:grid-cols-3 md:grid-rows-2 xl:grid-cols-4 xl:grid-rows-3 xl:gap-6 gap-3">
+        <div className="md:col-span-2 xl:col-span-3 xl:row-span-2 xl:h-[600px] md:h-[400px] h-[200px] relative rounded-lg overflow-hidden">
           <Image
             alt="tq1"
             src="/images/tq1.jpg"
@@ -16,7 +16,7 @@ export default function SectionGrid({ title }: { title: string }) {
             className="absolute object-cover w-full h-full"
           />
         </div>
-        <div className="row-span-2 relative rounded-lg overflow-hidden">
+        <div className="xl:row-span-2 relative rounded-lg overflow-hidden">
           <Image
             alt="tq2"
             src="/images/tq2.jpg"
@@ -24,7 +24,7 @@ export default function SectionGrid({ title }: { title: string }) {
             className="absolute object-cover w-full h-full"
           />
         </div>
-        <div className="col-span-2 relative rounded-lg overflow-hidden">
+        <div className="xl:col-span-2 relative rounded-lg overflow-hidden">
           <Image
             alt="tq3"
             src="/images/tq3.jpg"

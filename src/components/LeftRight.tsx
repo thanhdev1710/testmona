@@ -15,23 +15,25 @@ export default function LeftRight({
   const isLeft = format === "imgLeft";
   return (
     <div
-      className={`flex justify-between mb-16 xl:gap-[100px] md:gap-[50px] gap-4 text-[#151515] ${
-        isLeft ? "flex-row-reverse" : "flex-row"
+      className={`flex justify-between xl:gap-[100px] md:gap-[50px] gap-4 text-[#151515] ${
+        isLeft ? "md:flex-row-reverse flex-col" : "md:flex-row flex-col"
       }`}
     >
-      <div className="w-1/2">
-        <div className="w-[80%]">
-          <h3 className="font-bold text-[24px] mb-6 uppercase">{title}</h3>
+      <div className="md:w-1/2 w-full">
+        <div className="md:w-[80%] w-full">
+          <h3 className="font-bold md:text-[24px] text-[18px] mb-6 uppercase">
+            {title}
+          </h3>
           <ul className="list-disc space-y-3">
             {contentList.map((content, i) => (
               <li className="ml-8" key={content + i}>
-                <p className="md:text-[16px] text-xs">{content}</p>
+                <p className="md:text-[16px] text-[14px]">{content}</p>
               </li>
             ))}
           </ul>
         </div>
       </div>
-      <div className={`relative w-1/2 rounded-lg overflow-hidden`}>
+      <div className={`relative md:w-1/2 w-full rounded-lg overflow-hidden`}>
         <Image
           alt={title}
           src={img}

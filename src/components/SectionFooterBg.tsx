@@ -4,7 +4,7 @@ import React from "react";
 
 export default function SectionFooterBg() {
   return (
-    <div className="relative xl:mt-[260px] lg:mt-[180px] mt-[100px]">
+    <div className="relative xl:mt-[260px] lg:mt-[180px] mt-[120px]">
       <div className="relative w-full xl:h-[712px] h-[360px]">
         <Image
           alt="Footer Background"
@@ -20,7 +20,7 @@ export default function SectionFooterBg() {
             <h2 className="text-effect 2xl:text-[250px] xl:text-[200px] lg:text-[150px] md:text-[100px] text-[50px]">
               AFFILIATE
             </h2>
-            <h3 className="font-bold xl:text-[48px] text-[36px] lg:w-[65%] w-full uppercase">
+            <h3 className="font-bold xl:text-[48px] md:text-[36px] text-[24px] lg:w-[65%] w-full uppercase">
               Chính sách hoa hồng hấp dẫn cho người giới thiệu
             </h3>
           </div>

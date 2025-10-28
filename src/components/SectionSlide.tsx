@@ -29,10 +29,10 @@ export default function SectionSlide({
       {/* Header */}
       <div className="flex justify-between text-[#151515]">
         <div className="xl:w-[65%] w-full">
-          <h2 className="xl:text-[48px] text-[36px] font-bold uppercase mb-3">
+          <h2 className="xl:text-[48px] md:text-[36px] text-[24px] font-bold uppercase mb-3">
             {title}
           </h2>
-          <p className="text-[18px] w-[85%]">{description}</p>
+          <p className="text-[18px] md:w-[85%] w-full">{description}</p>
         </div>
       </div>
 
@@ -54,8 +54,19 @@ export default function SectionSlide({
         </button>
 
         <Swiper
-          slidesPerView={3}
+          // slidesPerView={3}
           spaceBetween={30}
+          breakpoints={{
+            1024: {
+              slidesPerView: 3,
+            },
+            768: {
+              slidesPerView: 2,
+            },
+            0: {
+              slidesPerView: 1,
+            },
+          }}
           modules={[Navigation]}
           navigation={{
             prevEl: prevRef.current,

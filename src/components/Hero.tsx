@@ -12,7 +12,7 @@ export default function Hero() {
         className="z-1 object-cover absolute"
       />
       <div className="absolute bottom-0 left-0 w-full h-[20%] from-black/80 to-transparent bg-linear-to-t z-2"></div>
-      <div className="absolute bottom-0 z-3 pb-5 md:pl-30 pl-12 pr-3 w-full backdrop-blur-[1px]">
+      <div className="absolute bottom-0 z-3 md:pb-14 pb-5 lg:pl-30 md:pl-12 pl-3 pr-3 w-full backdrop-blur-[1px]">
         <div>
           <Image
             alt="Logo Hero"
@@ -22,7 +22,7 @@ export default function Hero() {
             className="lg:scale-110"
           />
 
-          <h2 className="font-bold xl:text-[48px] text-[36px] text-white mt-4 uppercase">
+          <h2 className="font-bold xl:text-[48px] md:text-[36px] text-[24px] text-white mt-4 uppercase">
             Mở ra giới hạn diễn hoạ kiến trúc
           </h2>
         </div>
